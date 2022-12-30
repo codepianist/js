@@ -1,0 +1,16 @@
+{
+  "name": "electron-sample-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
+  },
+  "author": "CodePianist",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
