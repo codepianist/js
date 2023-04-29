@@ -1,0 +1,22 @@
+<style type="text/css">
+	.square {
+		float: left;
+		margin-left: 10px; 
+		background-color: lightgray;
+		height: 50px;
+		width: 50px;
+	}
+
+	.red { background-color: #ac3939; }
+	.blue { background-color: dodgerblue; }
+	.green { background-color: #39ac39; }
+	.grey { background-color: lightgray; }
+</style>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="script.js"></script>
+
+<div id="app">
+	<div id="first" :class="[square, first_color]" @click="first++"></div>
+	<div id="second" :class="[square, second_color]" @click="second++"></div>
+	<div id="third" :class="[square, third_color]" @click="third++"></div>
+</div>

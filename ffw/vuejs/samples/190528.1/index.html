@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>
+<div id="app">
+	<input type="text" v-on:input="changeTitle" />
+	<p id="result">{{ title }}</p>
+	<p id="result">{{ sayHello() }}</p>
+	<h3>See more:</h3>
+	<p><a v-bind:href="seeMore" target="_blank">Link</a></p>
+	<p v-html="code"></p>
+	<p v-on:mousemove="updateCoordinates">
+		Coordinates = [{{ x }},{{ y }}] | 
+		<!-- Event modifier -->
+		<span v-on:mousemove.stop.prevent>DEAD SPOT {{ x }},{{ y }}</span>
+
+	</p>
+	<p>Counter: {{ counter }}</p>
+	<button v-on:click="increase(3)">Increase</button>
+	<!--To also pass the event
+		<button v-on:click="increase(3, $event)">Increase</button> 
+	-->
+	<p><input type="text" v-on:keyup.enter.space="alertMe"></p>
+</div>
