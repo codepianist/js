@@ -1,12 +1,21 @@
 
 # React
-
+- Reacts to changes on state
 
 ## Principals
 
-1. Don't touch the DOM;
+1. Don't touch the DOM- Document Object Model;
+   - Imperative: direct order 
+   - Declarative: Now u declare the state and React handles dom manipulation
+   - Changing DOM is an expensive operation
 2. Lego blocks;
+   - Reusable component architecture;
+   - A collection of components build an entire app
+   - https://blueprintjs.com/
+   - React developer tools: chrome://extensions/?id=fmkadmapgofadopljbjfkapdkoienihi
 3. Unidirectional data flow;
+   - VirtualDOM tree up to -> down 
+   - When State changes ->  State+Components -> component on VirtualDOM -> DOM 
 4. We deal with UI, the rest is up to you;  
 
 Components

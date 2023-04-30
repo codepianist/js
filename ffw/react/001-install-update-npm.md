@@ -1,7 +1,8 @@
 
 ```shell
-npm install -g npm
 npm -v
+npm install -g npm
+npm update -g npm
 ```
 
 ## Links
